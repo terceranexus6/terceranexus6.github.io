@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/coffeehouse.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">THE PROJECT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#mision" class="w3-button w3-block w3-black">MISION</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#help" class="w3-button w3-block w3-black">WANT TO HELP?</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Mision Container -->
+<div class="w3-container" id="mision">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+    <p>Our world is based in techology and BLABLAH.</p>
+    <p>STUFF ABOUT INTERNET CENSORSHIP IN COUNTRIES.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"the right to privacy and..."</i></p>
+      <p>Ex NSA agent and activist: Edward Snowden</p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">    
+  </div>
+</div>
+
+<!-- Help Container -->
+<div class="w3-container" id="help">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Activist');" id="myLink">
+        <div class="w3-col s6 tablink">Activist</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'User');">
+        <div class="w3-col s6 tablink">User</div>
+      </a>
+    </div>
+
+    <div id="Activist" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Who are you?</h5>
+      <p class="w3-text-grey">Are you an activist? Either if you are an user who's done with his/her/- country internet censorship, or you are investigating and fighting against activist, you might be of help.</p><br>
+    
+      <h5>What can I do?</h5>
+      <p class="w3-text-grey">If you are investigating about internet censorship or have covered any specific action against it, you can contact me and tell me about it. I want my sources to be the more reliable as posible so details of your own sources might be interesting. All of the content I find will be published in a book, mentioning the sources, so if you want to help AND being mentioned, please provide the way you want to be mentioned. </p><br>
+    
+      <h5>Money?</h5>
+      <p class="w3-text-grey">The main help I want is information, sources and documentation. I don't need economical help by now, if you have an special interest to provide this kind of help even though, please contact me.</p><br>
+    
+      <h5>Can I mention you or your project in my blog?</h5>
+      <p class="w3-text-grey">Sure! Just please mention my name or the web. Any mentions are welcomed.</p><br>
+    
+      <h5>Thank you</h5>
+      <p class="w3-text-grey">For fighting for digital rights.</p>
+    </div>
+
+    <div id="Users" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Who are you?</h5>
+      <p class="w3-text-grey">Are you a regular user who is suffering from internet censorship? I really want to hear from you, please contact me and tell me your experience.</p><br>
+    
+      <h5>How can I help?</h5>
+      <p class="w3-text-grey">In the contact section you can see how to contact me, please tell me your internet censorship experience, provide as many details as posible. All the content I find appropiate will be published so either if you want to be mentioned or not, tell me. Also thank you a lot, and if I'm able to help, I'll do my best.</p><br>
+    
+      <h5>Money?</h5>
+      <p class="w3-text-grey">The main help I want is information, sources and documentation. I don't need economical help by now, if you have an special interest to provide this kind of help even though, please contact me.</p><br>
+    
+      <h5>Thank you</h5>
+      <p class="w3-text-grey">For your interest in the internet censorship fighting.</p><br>
+    
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HOW TO CONTACT ME</span></h5>
+    <p>You can freely message me, but in order to keep some privacy, you need to use GPG.</p>
+    <p><span class="w3-tag">GPG?</span> Yep! this is a way to encrypt messages in order to make the communication more secure. Check behind how to use it, and send anencrypted message to inversealien@protonmail.com</p>
+    
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Linux');" id="myLink">
+        <div class="w3-col s6 tablink">Linux</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Windows');">
+        <div class="w3-col s6 tablink">Windows</div>
+      </a>
+    </div>
+
+    <div id="Linux" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>For linux we will use the terminal.</h5>
+      <p class="w3-text-grey">In the linux terminal we can encrypt using GPG. It will take only a few minutes to learn and will provide a secure tool for communication for a long time.</p><br>
+    
+      <h5>How can I use it?</h5>
+      <p class="w3-text-grey">There are a couples of webs that explain hot to encrypt and decrypt messages using GPG. <a href="https://www.gnupg.org/gph/en/manual/x110.html" target="_blank">this is the first one</a>, and <a href="https://www.cyberciti.biz/tips/linux-how-to-encrypt-and-decrypt-files-with-a-password.html" target="_blank">this is another one</a>. I hope this helps. </p><br>
+    
+      <h5>Why using GPG?</h5>
+      <p class="w3-text-grey"> The main point of this investigation is remarking the importance of privacy, I want to keep this line inmy own communications too. Also some users and activist might be compromised if they contact me, I want to provide the most secure options posible.</p><br>
+ 
+    </div>
+
+    <div id="Windows" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>For windows...</h5>
+      <p class="w3-text-grey"> we will use <a href = "https://ssd.eff.org/en/module/how-use-pgp-windows" target= "_blank">this guide</a> provided by the electronic frontier foundation. It's in several languages.</p><br>
+    
+     <h5>Why using GPG?</h5>
+      <p class="w3-text-grey"> The main point of this investigation is remarking the importance of privacy, I want to keep this line inmy own communications too. Also some users and activist might be compromised if they contact me, I want to provide the most secure options posible.</p><br>
+    
+    </div>  
+
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Fighting and stuff by <a href="https://github.com/terceranexus6" title="PAULA" target="_blank" class="w3-hover-text-green">Paula</a></p>
+</footer>
+
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
