@@ -1,0 +1,35 @@
+<!-- template for the component -->
+<script type="x/template" id="header-view-template">
+  <div class="draggable-header-view"
+    @mousedown="startDrag" @touchstart="startDrag"
+    @mousemove="onDrag" @touchmove="onDrag"
+    @mouseup="stopDrag" @touchend="stopDrag" @mouseleave="stopDrag">
+    <svg class="bg" width="320" height="560">
+      <path :d="headerPath" fill=" #fff"></path>
+    </svg>
+    <div class="header">
+      <slot name="header"></slot>
+    </div>
+    <div class="content" :style="contentPosition">
+      <slot name="content"></slot>
+    </div>
+  </div>
+</script>
+
+<draggable-header-view>
+  <template slot="header">
+    <h1>Peep on Surveillance</h1>
+    <p>As they <a href="http://vuejs.org" target="_blank">peep on your life.</a>  Drag the border to read more..
+    <br><br> Surveillance in different countries is one of the main problems of the internet today, and so it is internet censorship. Thousands of users are suffering a violation of their rights, maybe even you. <br>         ...  But shhh that's a secret! </p>
+  </template>
+  <template slot="content">
+    <p>
+    It's not a matter of what you hide or not, it's a matter of protecting <b>everyone's rights</b>. <br><br> Do you want to learn more about <b>Internet censorship, surveillance and privacy</b>? take a look at this links and teach yourself today. Maybe tomorrow you'll know more about our digital world. 
+    <br><br><br>
+    - <a href="https://eff.org" target="_blank"> <b>Electronic Frontier Foundation</b></a><br>
+    - <a href="https://internetfreedomfestival.org/" target="_blank"><b>Internet Freedom Festival web</b></a><br>
+    - <a href="securityinabox.org" target="_blank"><b>Security in a box</b></a><br>
+    - <a href="12mars.rsf.org/2014-en/" target="_blank"><b>Enemies of the Internet</b></a><br>
+    </p>
+  </template>
+</draggable-header-view>
