@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>Let's Code!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/coffeehouse.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PARTICIPATE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Learn coding with an amazing female programmer</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Let's<br>Code!</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">or teach others!</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+    <p>There are many female programmers out there and even though, there are few girls learning computer engineering or computer science degrees at university all around the world. Some activism has developed around this fact, trying to teach young girls how they are capable of doing what they like, in case they are "techies". </p>
+    <p>But one point that usually comes out when asking why girls don't choose computer engineering is because society says there are no girls in computer science, which might be scary, sometimes. If their fellow classmates and friends, either boys or girls, find a girl in computer science a weird thing, this could be a problem. This is why <b>this project aims to look for female tutoring of both gender students</b>, so the society of the future, either guys and gals, see girls rocking in programming as something normal. <b>Working together we can change a little bit the perspective</b>.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>We all admire that one teacher that introduced us to what we love the most. Let's create female inspirations in techie kids!</b></i></p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">I WANT TO PARTICIPATE!</span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tutor');" id="myLink">
+        <div class="w3-col s6 tablink">TUTOR</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Student');">
+        <div class="w3-col s6 tablink">STUDENT</div>
+      </a>
+    </div>
+
+    <div id="Tutor" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>I want to teach programming, What are the requisites?</h5>
+      <p class="w3-text-grey"><b>You need to be a female to be a tutor</b>. I know this could make some guys feel discriminated, but think about it, we are looking for female inspiration to change a perspective. If you are a guy and want to help, recomend this site to female programmers you know, or tell your kids, nephews, nieces and such about being students. It's free!<br> If you are a female, you also need to know about programming. If you have previous experience in teaching even better! <br>Finally you need to be responsible and think it twice. You will need to have time (even if it's online) to take care of the tech-tutoring of a kid. This is important because you might be introducing a future engineer to her/his passion.<br>If you are interested, please contact as specified in the bottom, and we will contact you as soon as posible for an online interview. </p><br>
+    
+      <h5>Am I going to get paid for this?</h5>
+      <p class="w3-text-grey">No, I'm sorry. This is a volunteer movement. For now, there's no economical retribution. </p><br>
+    
+      <h5>I'm a trans woman, is there any problem of being a tutor?</h5>
+      <p class="w3-text-grey">Not at all, like, of course not!</p><br>
+    
+      <h5>I don't have teaching experience, is that a problem?</h5>
+      <p class="w3-text-grey">No! don't worry. It's just better to have experience, but you can be a tutor for the first time through Let'sCode!</p><br>
+    
+
+    <div id="Student" class="w3-container menu w3-padding-48 w3-card-2">
+      
+    
+      <h5>I want to be a student! What should I do?</h5>
+      <p class="w3-text-grey">Great! welcome to your path through programming. You must be under 18 to apply, have internet connection and want to study programming and learn about tech. That's all!</p><br>
+      
+      <h5>I'm +18, but I want a female tutor. Is that ok?</h5>
+      <p class="w3-text-grey">We only accept under 18, at first. But you can contact us and we can study your case.</p><br>
+    
+      <h5>I'm a parent/responsible of the kid. How can I know my kid is safe in this project?</h5>
+      <p class="w3-text-grey">The tutors will be carefully chosen and should be responsible women. The tutoring will be online and your kid will be sent a guide on how to protect herself/himself on the internet. If you have further questions please don't hesitate to contact.</p><br>
+    
+      
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
