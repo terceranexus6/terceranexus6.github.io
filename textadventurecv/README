@@ -1,0 +1,26 @@
+READ ME
+
+This is a friendly way to introduce myself. Let's begin with a how-to
+compile this, but's it's quite easy.
+
+You can both execute the .sh in linux or compile the c++ project using
+
+g++ -o PAULADELAHOZ discoverPaula.cpp
+
+It's a basic c++ program, so there should be no problem here. If there's a
+"command not found" ERROR, try typing
+
+a+x install.sh
+
+FAQ:
+
+- Why a floppy?
+Apart from the fact that I have tons of them, it's because I thought it
+would be funny.
+
+- Why not a graphical app?
+Text adventures are so cool, they were the first kind of videogames ever
+and I really wanted to make my own.
+
+- Do you like tea?
+Yes I do.
