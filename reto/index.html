@@ -18,7 +18,20 @@
         Search: <input type="text" name="query" value=""/><input type="submit" value="Search" />
     </form>
     <br /><br />
-    
+     <div class="wrong solution">
+        <b>Wrongly escaped HTML:</b>
+        <pre>Searched for <i></i></pre>
+    </div>
+
+    <div class="right solution">
+        <b>Correctly escaped:</b>
+        <div>
+            Searched for 
+        </div>
+
+        <b>Correctly escaped HTML:</b>
+        <pre>Searched for <i></i></pre>
+    </div>
         </section>
 		<footer>
 			probando
